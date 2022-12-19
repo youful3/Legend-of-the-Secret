@@ -1,9 +1,7 @@
 import time
 from Functions import *
 from Save import *
-
-def save():
-	pass
+import os
 
 new = 0
 
@@ -25,6 +23,8 @@ if nlc == "N" or nlc == "n" or has_launched == False:
 elif has_launched == True:
 	print("Welcome back " + name)
 
-print("USarim is gay")
+input("Press enter to enter the main world... ")
 
-input("Press enter to kill the program")
+os.startfile(r"Main world.py")
+
+exit()
