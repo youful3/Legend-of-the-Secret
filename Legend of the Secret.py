@@ -25,4 +25,6 @@ if nlc == "N" or nlc == "n" or has_launched == False:
 elif has_launched == True:
 	print("Welcome back " + name)
 
+print("USarim is gay")
+
 input("Press enter to kill the program")
