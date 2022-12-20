@@ -1,4 +1,5 @@
 import os
+from spec_save import *
 
 def v1(strs):
     input(f"Voice 1: {strs}")
