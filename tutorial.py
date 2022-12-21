@@ -18,8 +18,11 @@ def tu(Instruction):
     input(f"TUTORIAL TIP: {Instruction} Press [ENTER] to continue: ")
 
 f = open("tutorial_save.py", "w")
+def write(intro, hunt):
+    f.write("intro = " + str(intro) + "\n" + "hunting = " + str(hunt))
+    f.close()
 
-if intro == True:
+if intro == False:
  t(3)
  pr("Silence...")
  t(3)
@@ -41,29 +44,12 @@ if intro == True:
  pr("The sign reads '" + name + " owns this farm'.")
  pr("")
  t(3)
+ di("Time to go hunting now.")
+ write(True, False)
+ t(3)
+
+write(True, False)
 
 if hunting == False:
-    tu("The following list is what will be used to navigate the different attacks, areas in the open world, and inventory, through out the game.")
-    tu("In the prompt given below the list, you will have to type the number corresponding to your choice.")
-    t(3)
-    pr("TUTORIAL TIP: Right now, we are about to learn about hunting, so type the number corresponding to the hunting option.")
-    loop = True
-    while loop == True:
-        for option in home:
-            print(option)
-        option = input("Type the number corresponding to your choice: ")
-        if option == '1':
-            print("It seems your wardrobe is empty.")
-            t(2)
-        elif option == '2':
-            print("It seems you have all your weapons equipped")
-            t(2)
-        elif option == '3':
-            print("You must complete the tutorial before entering the main world.")
-            t(2)
-        elif option == '4':
-            loop = False
-        else:
-            print("I didn't understand, make sure there is no typo.")
-        i("Press [ENTER] to continue: ")
-    
+    for option in home:
+        print(option)

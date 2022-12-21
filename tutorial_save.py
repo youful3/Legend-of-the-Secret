@@ -1,2 +1,2 @@
-intro = False
+intro = True
 hunting = False
