@@ -49,6 +49,7 @@ if intro == False:
  t(3)
 
 write(True, False)
+print("Usarim is gay")
 
 if hunting == False:
     for option in home:
