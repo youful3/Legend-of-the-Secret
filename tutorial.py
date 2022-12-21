@@ -75,5 +75,4 @@ if menu == False:
         t(2)
 
 if hunting == False:
-    for option in home:
-        print(option)
+    pass
