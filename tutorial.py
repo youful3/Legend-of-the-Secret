@@ -16,6 +16,8 @@ def i(stri):
     input(stri)
 def tu(Instruction):
     input(f"TUTORIAL TIP: {Instruction} Press [ENTER] to continue: ")
+def note(stri):
+    print("PLEASE NOTE: " + stri)
 
 f = open("tutorial_save.py", "w")
 def write(intro, hunt):
@@ -51,5 +53,23 @@ if intro == False:
 write(True, False)
 
 if hunting == False:
-    for option in home:
-        print(option)
+    tu("Option menus (such as the one coming up) are what are going to be used to navigate the areas found throughout the game.")
+    tu("Right now, we will learn how to hunt, which is the basic way to grind XP.")
+    note("The way I designed this is janky, so expect at least 1 small bug, nothing game breaking though :D.")
+    loop = True
+    while loop == True:
+        pr("")
+        tu("CHOOSE THE HUNT OPTION.")
+        for op in home:
+            print(op)
+        i = input("Type in the number corrosponding to your choice: ")
+        pr("")
+        if i == "1":
+            print("It seems your wardrobe is empty")
+        elif i == "2":
+            print("It seems you have all your weapons equipped.")
+        elif i == "3":
+            print("Complete the tutorial before proceeding to the main world.")
+        elif i == "4":
+            loop = False
+        t(2)
