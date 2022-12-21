@@ -20,8 +20,8 @@ def note(stri):
     print("PLEASE NOTE: " + stri)
 
 f = open("tutorial_save.py", "w")
-def write(intro, hunt):
-    f.write("intro = " + str(intro) + "\n" + "hunting = " + str(hunt))
+def write(intro, menu, hunt):
+    f.write("intro = " + str(intro) + "\n" + "menu = " + str(menu) + "\n" + "hunting = " + str(hunt))
     f.close()
 
 if intro == False:
@@ -47,12 +47,12 @@ if intro == False:
  pr("")
  t(3)
  di("Time to go hunting now.")
- write(True, False)
+ write(True, False, False)
  t(3)
 
-write(True, False)
+write(True, False, False)
 
-if hunting == False:
+if menu == False:
     tu("Option menus (such as the one coming up) are what are going to be used to navigate the areas found throughout the game.")
     tu("Right now, we will learn how to hunt, which is the basic way to grind XP.")
     note("The way I designed this is janky, so expect at least 1 small bug, nothing game breaking though :D.")
@@ -73,3 +73,6 @@ if hunting == False:
         elif i == "4":
             loop = False
         t(2)
+
+if hunting == False:
+    pass
