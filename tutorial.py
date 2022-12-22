@@ -15,12 +15,14 @@ def di(stri):
 def i(stri):
     input(stri)
 def tu(Instruction):
+    print("")
     input(f"TUTORIAL TIP: {Instruction} Press [ENTER] to continue: ")
+    print("")
 def note(stri):
-    print("PLEASE NOTE: " + stri)
+    input("PLEASE NOTE: " + stri + " Press enter to continue: ")
 
-f = open("tutorial_save.py", "w")
 def write(intro, menu, hunt):
+    f = open("tutorial_save.py", "w")
     f.write("intro = " + str(intro) + "\n" + "menu = " + str(menu) + "\n" + "hunting = " + str(hunt))
     f.close()
 
@@ -73,6 +75,12 @@ if menu == False:
         elif i == "4":
             loop = False
         t(2)
+    write(True, True, False)
 
 if hunting == False:
-    pass
+    tu("Hunting is the most basic way to grind XP in this game, so we'll first learn how to do that.")
+    tu("In Legend of the Secret, hunting is based on RNG (Randomised), later on you'll find weapons that increase your hunting luck.")
+    note("Because this is a tutorial, the hunting system here is scripted and not randomised, because I was too lazy to develop the system, but don't worry, the system in the actual game is RNG, yay gambling!")
+    tu("Hunting takes a small amount of gold per session, by that I mean [5] gold per session.")
+    tu("Now, let's start with the hunting!")
+    i = input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
