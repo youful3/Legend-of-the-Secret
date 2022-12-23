@@ -4,7 +4,7 @@ from Enemies import *
 from Save import *
 from tutorial_save import *
 from Lists import *
-import time
+import time, os
 
 def t(number):
     time.sleep(number)
@@ -20,6 +20,9 @@ def tu(Instruction):
     print("")
 def note(stri):
     input("PLEASE NOTE: " + stri + " Press enter to continue: ")
+def tc(stri):
+    print(stri)
+    time.sleep(4)
 
 def write(intro, menu, hunt):
     f = open("tutorial_save.py", "w")
@@ -84,3 +87,25 @@ if hunting == False:
     tu("Hunting takes a small amount of gold per session, by that I mean [5] gold per session.")
     tu("Now, let's start with the hunting!")
     i = input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
+    print("")
+    t(2)
+    loop = True
+    while loop == True:
+        if i == "n" or i == "N":
+            print("Sorry, you can't do that during the tutorial, sorry :(.")
+            t(3)
+        else:
+            loop = False
+    input("You caught a [Basic Fawn]! Gained [10] gold. Made back [5] gold. Press [ENTER] to continue: ")
+    print("")
+    input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
+    print("")
+    print("Grounds Officer: Sorry kid, times up, the hunting grounds are closing.")
+    di("Damn, okay I guess, I'll just come back tomorrow.")
+    print("Grounds Officer: Thanks for understanding.")
+    print("")
+    t(2)
+    tc("It's time...")
+    tc("It's time to move on...")
+    tc("It's time to pull the trigger...")
+    os.startfile("Dialoges.py")
