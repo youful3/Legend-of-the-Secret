@@ -20,6 +20,10 @@ def write(first, first_digit):
     f.write("first_digit = '" + str(first_digit) + "'" + "\n")
     f.close()
 
+def transition():
+    os.startfile("transition.py")
+    exit()
+
 print("")
 input("Note: Make sure to press [ENTER] after each dialogue/line :D ")
 print("")
@@ -62,5 +66,8 @@ if first == True:
     time.sleep(4)
     print("Technology is no more")
     time.sleep(4)
-    print("Only the zero energy remains.")
+    input("Only the zero energy remains.")
     write("True", "b")
+    transition()
+  if first_digit == "b":
+    pass
