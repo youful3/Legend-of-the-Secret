@@ -2,14 +2,6 @@ from dial_save import *
 from Save import *
 import time, os
 
-def v1(strs):
-    input('You: ' + strs)
-    print("")
-
-def v2(strs):
-    input('John: ' + strs)
-    print("")
-
 def c(strs):
     input(strs)
     print("")
@@ -30,6 +22,13 @@ print("")
 time.sleep(2)
 
 if first == True:
+  def v1(strs):
+    input('You: ' + strs)
+    print("")
+
+  def v2(strs):
+    input('John: ' + strs)
+    print("")
   if first_digit == "a":
     write("True", "a")
     c("Returning home, even then trouble couldn't leave you be, it seems it liked to find you...")
@@ -74,3 +73,44 @@ if first == True:
     c("If you would've stayed, would things have been different?")
     c("Would I still be alive?")
     c("Would all of this have ever happened?")
+    c("Would they still be here?")
+    write("True", "c")
+    transition()
+  elif first_digit == "c" or first_digit == "b":
+    v1("So this is it?")
+    v2("Yup, it does look kind of overwhelming.")
+    v1("Damn. Alright, so what now?")
+    v2("You see that?")
+    c("John pointed towards an old rotten corpse, almost a skeleton by that point.")
+    v1("Holy. How old do you think that is?")
+    v2("I don't know, but frankly nor do I care. He was one of the fryers.")
+    v1("Geez.")
+    v2("Messed up stuff they used to do.")
+    v1("I'm guessing you called me to do something about the beacon on it?")
+    v2("Yeah, you're the only one who I know can crack it.")
+    c("You plot your bag down on the ground and pulled your antenna device from it.")
+    v2("So?")
+    v1("It seems to be morse code.")
+    v2("A what code?")
+    v1("Some encrypted language or some crap, I don't really know why they made it.")
+    v2("Huh, it seems he was trying to transmit something.")
+    v1("The beacon's centuries old. Damn.")
+    v2("So what was the guy transmitting?")
+    v1("Well isn't that convenient? It was transmitting the code to the bunker.")
+    v2("Well that's a plus, should we go inside?")
+    v1("Of course. Would you look at that! There's code here which can use a wireless connection to open the door.")
+    v2("Okay now there's something fishy going on.")
+    v1("Yeah, it's too good to be true, but let's try it anyway.")
+    v2("It isn't gonna work.")
+    c("You pushed that holographic button on your device. Oh that antenna device... so iconic.")
+    c("The door opened, with a metalic creak.")
+    v1("Holy crap. Haha.")
+    v2("Race you inside?")
+    v1("Nah, too dangerous.")
+    c("You both walked ever so lightly towards the opened door.")
+    c("But as you said: it was too good to be true.")
+    c("You shouldn't have put your step through, neither of you should have.")
+    c("As all went to black.")
+    c("Welcome to reality, the one above yours, welcome to the arenas.")
+    write(True, "d")
+    transition()
