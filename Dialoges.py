@@ -70,4 +70,7 @@ if first == True:
     write("True", "b")
     transition()
   if first_digit == "b":
-    pass
+    c("You followed, why did you follow?")
+    c("If you would've stayed, would things have been different?")
+    c("Would I still be alive?")
+    c("Would all of this have ever happened?")
