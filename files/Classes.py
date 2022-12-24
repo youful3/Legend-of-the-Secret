@@ -1,5 +1,4 @@
 from Functions import *
-import random
 
 #Class for NPCs
 class Npc:
