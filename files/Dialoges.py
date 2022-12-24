@@ -1,4 +1,4 @@
-from dial_save import *
+from Dial_save import *
 from Save import *
 import time, os
 
@@ -7,13 +7,13 @@ def c(strs):
     print("")
 
 def write(first, first_digit):
-    f = open("dial_save.py", "w")
+    f = open("files\Dial_save.py", "w")
     f.write("first = " + str(first) + "\n")
     f.write("first_digit = '" + str(first_digit) + "'" + "\n")
     f.close()
 
 def transition():
-    os.startfile("transition.py")
+    os.startfile("files\Transition.py")
     exit()
 
 print("")
@@ -113,4 +113,4 @@ if first == True:
     c("As all went to black.")
     c("Welcome to reality, the one above yours, welcome to the arenas.")
     write(True, "d")
-    os.open("Main.py")
+    os.open("files\Main world.py")

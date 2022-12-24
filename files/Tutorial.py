@@ -1,8 +1,8 @@
 from Classes import *
 from Functions import *
-from Enemies import *
+from Character_Enemies import *
 from Save import *
-from tutorial_save import *
+from Tutorial_save import *
 from Lists import *
 import time, os
 
@@ -25,7 +25,7 @@ def tc(stri):
     time.sleep(4)
 
 def write(intro, menu, hunt):
-    f = open("tutorial_save.py", "w")
+    f = open("files\Tutorial_save.py", "w")
     f.write("intro = " + str(intro) + "\n" + "menu = " + str(menu) + "\n" + "hunting = " + str(hunt))
     f.close()
 
@@ -107,4 +107,4 @@ if hunting == False:
     tc("It's time...")
     tc("It's time to move on...")
     tc("It's time to pull the trigger...")
-    os.startfile("Dialoges.py")
+    os.startfile("files\Dialoges.py")

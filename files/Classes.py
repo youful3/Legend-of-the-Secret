@@ -20,7 +20,7 @@ class BasicEnemy(Npc):
 class Monster(BasicEnemy):
 	def __init__(self, name, job, ene_m, hp, atk_mi, atk_ma, super_name, super_dmg):
 		super().__init__(name, job, ene_m, hp, atk_mi, atk_ma)
-		self.a_hp = adva(hp)
+		self.a_hp, self.a_name = adva(hp), "Advanced " + name
 		self.super_name = super_name
 		self.super_dmg = super_dmg
 
@@ -29,3 +29,6 @@ class FinalEnemy(Monster):
 	def __init__(self, name, job, ene_m, hp, atk_mi, atk_ma, super_name, super_dmg, QQQ):
 		super().__init__(name, job, ene_m, hp, atk_mi, atk_ma, super_name, super_dmg)
 		self.QQQ = QQQ
+	
+class Weapon():
+	pass

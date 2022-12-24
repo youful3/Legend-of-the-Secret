@@ -1,7 +1,7 @@
 import time
 from Functions import *
 from Save import *
-from spec_save import *
+from Spec_save import *
 import os
 
 new = 0
@@ -30,6 +30,6 @@ input("Press [Enter] to enter the main world... ")
 if new_game == False:
 	os.startfile("Dial.py")
 else:
-	os.startfile(r"Main world.py")
+	os.startfile("files\Main world.py")
 
 exit()

@@ -1,5 +1,5 @@
 import os
-from spec_save import *
+from Spec_save import *
 
 def v1(strs):
     input(f"Voice 1: {strs}")
@@ -13,7 +13,7 @@ def c(strs):
     input(strs)
     print("")
 
-f = open("spec_save.py", "w")
+f = open("files\Spec_save.py", "w")
 f.write("new_game = False" + "\n" + "has_launched = False")
 f.close()
 
@@ -52,6 +52,6 @@ c("You weren't supposed to see this...")
 c("Wake up...")
 c("Wake up... ")
 
-os.startfile("Title.py")
+os.startfile("files\Title.py")
 
 exit()
