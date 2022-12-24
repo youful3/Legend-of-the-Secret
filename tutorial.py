@@ -55,8 +55,6 @@ if intro == False:
  write(True, False, False)
  t(3)
 
-write(True, False, False)
-
 if menu == False:
     tu("Option menus (such as the one coming up) are what are going to be used to navigate the areas found throughout the game.")
     tu("Right now, we will learn how to hunt, which is the basic way to grind XP.")
@@ -105,6 +103,8 @@ if hunting == False:
     print("Grounds Officer: Thanks for understanding.")
     print("")
     t(2)
+    tc("You were returning home...")
+    tc("So now it's time...")
     tc("It's time...")
     tc("It's time to move on...")
     tc("It's time to pull the trigger...")

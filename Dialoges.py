@@ -113,4 +113,4 @@ if first == True:
     c("As all went to black.")
     c("Welcome to reality, the one above yours, welcome to the arenas.")
     write(True, "d")
-    transition()
+    os.open("Main.py")
