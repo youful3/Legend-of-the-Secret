@@ -1,0 +1,1 @@
+home = ["1. Wardrobe", "2. Weapons", "3. Main World", "4. Hunting"]
