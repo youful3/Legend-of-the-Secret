@@ -1,9 +1,5 @@
 from Save import *
 
-#Combat script
-def Combat():
-	pass
-
 ###Save functions
 
 #Basic Save
