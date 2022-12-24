@@ -84,16 +84,15 @@ if hunting == False:
     note("Because this is a tutorial, the hunting system here is scripted and not randomised, because I was too lazy to develop the system, but don't worry, the system in the actual game is RNG, yay gambling!")
     tu("Hunting takes a small amount of gold per session, by that I mean [5] gold per session.")
     tu("Now, let's start with the hunting!")
-    i = input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
-    print("")
-    t(2)
     loop = True
     while loop == True:
+        i = input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
         if i == "n" or i == "N":
             print("Sorry, you can't do that during the tutorial, sorry :(.")
             t(3)
         else:
             loop = False
+
     input("You caught a [Basic Fawn]! Gained [10] gold. Made back [5] gold. Press [ENTER] to continue: ")
     print("")
     input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
