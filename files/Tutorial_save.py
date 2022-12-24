@@ -1,3 +1,3 @@
-intro = False
-menu = False
+intro = True
+menu = True
 hunting = False

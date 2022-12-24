@@ -18,9 +18,17 @@ if nlc == "N" or nlc == "n" or has_launched == False:
 			name = input("Hello warrior! What is your name? ")
 			saveStats(0, 0, 0, "default", name)
 			new_game = True
+			f = open("files\Spec_save.py", "w")
+			f.write("""new_game = False
+has_launched = False""")
+			f.close()
 	elif has_launched == False:
 		name = input("Hello warrior! What is your name? ")
 		saveStats(0, 0, 0, "default", name)
+		f = open("files\Spec_save.py", "w")
+		f.write("""new_game = False
+has_launched = False""")
+		f.close()
 		print(f"Welcome, {name}.")
 elif has_launched == True:
 	print("Welcome back " + name)
@@ -28,7 +36,7 @@ elif has_launched == True:
 input("Press [Enter] to enter the main world... ")
 
 if new_game == False:
-	os.startfile("Dial.py")
+	os.startfile("files\Dial.py")
 else:
 	os.startfile("files\Main world.py")
 

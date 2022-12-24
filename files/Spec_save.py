@@ -1,2 +1,2 @@
-new_game = True
+new_game = False
 has_launched = False

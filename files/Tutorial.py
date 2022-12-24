@@ -10,8 +10,10 @@ def t(number):
     time.sleep(number)
 def pr(stri):
     print(stri)
+    print("")
 def di(stri):
     print(f"You: {stri}")
+    print("")
 def i(stri):
     input(stri)
 def tu(Instruction):
@@ -20,8 +22,10 @@ def tu(Instruction):
     print("")
 def note(stri):
     input("PLEASE NOTE: " + stri + " Press enter to continue: ")
+    print("")
 def tc(stri):
     print(stri)
+    print("")
     time.sleep(4)
 
 def write(intro, menu, hunt):
@@ -80,7 +84,7 @@ if menu == False:
 
 if hunting == False:
     tu("Hunting is the most basic way to grind XP in this game, so we'll first learn how to do that.")
-    tu("In Legend of the Secret, hunting is based on RNG (Randomised), later on you'll find weapons that increase your hunting luck.")
+    tu("In Legend of the Secret, hunting is based on RNG (meaning it is Randomised), later on you'll find weapons that increase your hunting luck.")
     note("Because this is a tutorial, the hunting system here is scripted and not randomised, because I was too lazy to develop the system, but don't worry, the system in the actual game is RNG, yay gambling!")
     tu("Hunting takes a small amount of gold per session, by that I mean [5] gold per session.")
     tu("Now, let's start with the hunting!")
@@ -97,14 +101,17 @@ if hunting == False:
     print("")
     input("Press [ENTER] to enter the hunting grounds (press N to exit): ")
     print("")
-    print("Grounds Officer: Sorry kid, times up, the hunting grounds are closing.")
+    input("Grounds Officer: Sorry kid, times up, the hunting grounds are closing.")
+    t(1)
+    print("")
     di("Damn, okay I guess, I'll just come back tomorrow.")
-    print("Grounds Officer: Thanks for understanding.")
+    t(3)
+    input("Grounds Officer: Thanks for understanding.")
     print("")
     t(2)
     tc("You were returning home...")
     tc("So now it's time...")
     tc("It's time...")
     tc("It's time to move on...")
-    tc("It's time to pull the trigger...")
+    tc("It's time to open your eyes...")
     os.startfile("files\Dialoges.py")
