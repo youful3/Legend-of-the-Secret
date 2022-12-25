@@ -17,3 +17,20 @@ def new_game(TrueOrFalse):
 #Advanced Enemy Health
 def adva(hp):
 	return hp * 1.5
+
+
+#Combat System
+def active_combat(enemy1, num, weapon):
+	f = open("files\Combat_com_com.txt", "w")
+	f.write(enemy1 + "\n")
+	f.write(num + "\n")
+	f.write(weapon + "\n")
+	f.close()
+	active_combat_loop = True
+	while active_combat_loop == True:
+		c = open("files\Combat_com_active.txt", "r")
+		check_active = c.read(1)
+		if check_active == 'False':
+			active_combat_loop = False
+		else:
+			pass
