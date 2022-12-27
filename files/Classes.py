@@ -6,6 +6,9 @@ class Npc:
 		self.name = name
 		self.job = job
 
+#YOU ARE RAINBOWWW
+#WHICH IS FAX
+
 #Class for Basic Enemy
 class BasicEnemy(Npc):
 	def __init__(self, name, job, ene_m, hp, atk_mi, atk_ma):
