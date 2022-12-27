@@ -1,4 +1,5 @@
 from Save import *
+import os, time
 
 ###Save functions
 
@@ -22,11 +23,12 @@ def adva(hp):
 #Combat System
 def active_combat(enemy1, num, weapon):
 	f = open("files\Combat_com_com.txt", "w")
-	f.write(enemy1 + "\n")
-	f.write(num + "\n")
-	f.write(weapon + "\n")
+	f.write(str(enemy1) + "\n")
+	f.write(str(num) + "\n")
+	f.write(str(weapon) + "\n")
 	f.close()
 	active_combat_loop = True
+	os.startfile("files\Combat_System.py")
 	while active_combat_loop == True:
 		c = open("files\Combat_com_active.txt", "r")
 		check_active = c.read(1)
