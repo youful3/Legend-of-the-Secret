@@ -7,6 +7,7 @@ class Npc:
 		self.name = name
 		self.job = job
 
+
 #Class for Basic Enemy
 class BasicEnemy(Npc):
 	def __init__(self, var, name, job, ene_m, hp, atk_mi, atk_ma):
