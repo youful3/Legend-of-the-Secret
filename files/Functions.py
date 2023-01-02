@@ -6,6 +6,7 @@ import os, time
 #Basic Save
 def saveStats(gold, dp, hp, weapon, name):
 	f = open("files\Save.py", "w")
+	f.write("from Weapons import *" + "\n")
 	f.write("###Save files for " + name + "\n" + f"name = '{name}'" + "\n" + "gold = " + str(gold) + "\n" + "damage = " + str(dp) + "\n" + "health = " + str(hp) + "\n" + f"main_weapon = '{weapon}'")
 	f.close()
 	pass
@@ -21,11 +22,11 @@ def adva(hp):
 
 
 #Combat System
-def active_combat(enemy1, num, weapon):
+def active_combat(enemy1, num):
 	f = open("files\Combat_com_com.txt", "w")
 	f.write(str(enemy1) + "\n")
 	f.write(str(num) + "\n")
-	f.write(str(weapon) + "\n")
+	f.write(str(main_weapon) + "\n")
 	f.close()
 	active_combat_loop = True
 	os.startfile("files\Combat_System.py")
