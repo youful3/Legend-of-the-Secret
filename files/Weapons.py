@@ -12,7 +12,9 @@ maddy_sword = Weapon("maddy_sword", "The Hammad Sword", 15, 9)
 
 rainbow_sword = Weapon("rainbow_sword", "The Usarim Sword", 16, 8)
 
-maj_sword = Weapon("maj_sword", "The Adeel Sword", 17, 7)
+bakzy_sword = Weapon("bakzy_sword", "The Abubakar Sword", 14, 9)
+
+majj_sword = Weapon("majj_sword", "The Adeel Sword", 17, 7)
 
 true_fam_sword = Weapon("true_fam_sword", "The Heirloom Sword", 20, 13)
 

@@ -17,6 +17,7 @@ class BasicEnemy(Npc):
 		self.a_hp = adva(hp)
 		self.atk_mi, self.atk_ma = atk_mi, atk_ma
 
+
 #Class for Monster/Boss
 class Monster(BasicEnemy):
 	def __init__(self, var, name, job, ene_m, hp, atk_mi, atk_ma, super_name, super_dmg):
