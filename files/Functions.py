@@ -23,10 +23,10 @@ def adva(hp):
 
 #Combat System
 def active_combat(enemy1, num):
-	f = open("files\Combat_com_com.txt", "w")
-	f.write(str(enemy1) + "\n")
-	f.write(str(num) + "\n")
-	f.write(str(main_weapon) + "\n")
+	f = open("files\Combat_com_com.py", "w")
+	f.write("__enemy__ = ", str(enemy1) + "\n")
+	f.write("enemy_num = ",str(num) + "\n")
+	f.write("use_weapon = ", str(main_weapon) + "\n")
 	f.close()
 	active_combat_loop = True
 	os.startfile("files\Combat_System.py")

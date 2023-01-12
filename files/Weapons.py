@@ -1,4 +1,4 @@
-from Classes import *
+from Classes import Weapon
 
 base_sword = Weapon("base_sword", "The Family Sword", 10, 2)
 
@@ -16,6 +16,12 @@ bakzy_sword = Weapon("bakzy_sword", "The Abubakar Sword", 14, 9)
 
 majj_sword = Weapon("majj_sword", "The Adeel Sword", 17, 7)
 
+bio_sword = Weapon("bio_sword", "The Aliyan Sword", 13, 11)
+
+dumb_sword = Weapon("dumb_sword", "The Fatima Sword", 15, 8)
+
 true_fam_sword = Weapon("true_fam_sword", "The Heirloom Sword", 20, 13)
 
 boss_sword = Weapon("boss_sword", "The Warrior Sword", 25, 15)
+
+moka_sword = Weapon("moka_sword", "The Bob", 100, 50)
